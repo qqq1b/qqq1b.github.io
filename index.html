@@ -3,99 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="الموقع الرسمي لعرفات الهمداني، مسوق إلكتروني ومهتم بالتسويق الرقمي وتطوير الأعمال.">
 <title>عرفات الهمداني | الموقع الرسمي</title>
-<meta name="description" content="الموقع الشخصي لعرفات الهمداني، موسوعة معرفية ومحتوى في التسويق والإدارة والسيارات وصناعة المحتوى.">
+
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-background: #f5f6fa;
-color: #222;
-line-height: 1.9;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f4f5f8;
+  color: #17243b;
+  line-height: 1.9;
 }
+
 header {
-background: #14243a;
-color: white;
-text-align: center;
-padding: 55px 20px;
+  background: linear-gradient(135deg, #101b30, #243958);
+  color: white;
+  text-align: center;
+  padding: 85px 20px;
+  border-bottom: 4px solid #c9a45c;
 }
+
+header .tag {
+  color: #d9b66e;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
 header h1 {
-font-size: 32px;
+  font-size: 38px;
+  margin-bottom: 12px;
 }
-main {
-max-width: 850px;
-margin: 30px auto;
-padding: 20px;
+
+header p {
+  color: #e0e5ed;
+  font-size: 17px;
 }
-section {
-background: white;
-padding: 25px;
-margin-bottom: 20px;
-border-radius: 12px;
+
+nav {
+  background: #101b30;
+  text-align: center;
+  padding: 15px 8px;
 }
+
+nav a {
+  color: #e5c47d;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 18px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 22px rgba(0,0,0,.05);
+  border-right: 4px solid #c9a45c;
+}
+
 h2 {
-color: #b18a43;
+  color: #a47c35;
+  font-size: 23px;
+  margin-bottom: 16px;
 }
+
+.card p {
+  color: #505b6c;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.service {
+  background: #f4f5f8;
+  padding: 16px;
+  border-radius: 10px;
+  color: #263752;
+}
+
+.service span {
+  color: #b28a45;
+  margin-left: 7px;
+}
+
+.contact {
+  text-align: center;
+  background: #17243b;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 14px;
+}
+
+.contact h2 {
+  color: #e2bd72;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  background: #c9a45c;
+  color: #101b30;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #e5c47d;
+}
+
 footer {
-text-align: center;
-padding: 25px;
-background: #14243a;
-color: white;
+  background: #101b30;
+  color: #cbd1dc;
+  text-align: center;
+  padding: 22px;
+  font-size: 13px;
+}
+
+@media(max-width:600px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+
+  .card {
+    padding: 22px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>مرحباً بكم في الموقع الرسمي</h1>
-<h2>عرفات الهمداني</h2>
-<p>المعرفة والخبرة والإبداع</p>
+  <div class="tag">الموقع الرسمي</div>
+  <h1>عرفات الهمداني</h1>
+  <p>مسوق إلكتروني | مهتم بالتسويق الرقمي وتطوير الأعمال</p>
 </header>
 
-<main>
-<section>
-<h2>من أنا؟</h2>
-<p>
-عرفات الهمداني، مهتم بالتسويق الرقمي
-وإدارة التسويق والإعلانات وصناعة المحتوى،
-وتطوير الحضور الرقمي للشركات والمؤسسات.
-</p>
+<nav>
+  <a href="#about">من أنا</a>
+  <a href="#services">مجالات عملي</a>
+  <a href="#encyclopedia">الموسوعة التجارية</a>
+  <a href="#contact">تابعني</a>
+</nav>
+
+<main class="container">
+
+<section class="card" id="about">
+  <h2>من أنا؟</h2>
+  <p>
+    عرفات الهمداني، مسوق إلكتروني مهتم بالتسويق الرقمي
+    وإدارة الحملات وبناء العلامات التجارية.
+    أسعى إلى تقديم محتوى مفيد وتطوير الحضور الرقمي
+    والأعمال التجارية.
+  </p>
 </section>
 
-<section>
-<h2>مجالات الاهتمام والخبرة</h2>
-<ul>
-<li>التسويق الرقمي وإدارة التسويق.</li>
-<li>إدارة حسابات التواصل الاجتماعي.</li>
-<li>الإعلانات والحملات التسويقية.</li>
-<li>تسويق السيارات والمعارض.</li>
-<li>صناعة المحتوى والإعلام الرقمي.</li>
-<li>إدارة المشاريع وتطوير الأعمال.</li>
-</ul>
+<section class="card" id="services">
+  <h2>مجالات عملي</h2>
+  <p>مجموعة من المجالات التي أهتم بها في عالم التسويق الرقمي:</p>
+
+  <div class="services">
+    <div class="service"><span>◆</span> التسويق الإلكتروني</div>
+    <div class="service"><span>◆</span> إدارة حسابات التواصل الاجتماعي</div>
+    <div class="service"><span>◆</span> الحملات الإعلانية</div>
+    <div class="service"><span>◆</span> صناعة المحتوى الرقمي</div>
+    <div class="service"><span>◆</span> تطوير الأعمال التجارية</div>
+    <div class="service"><span>◆</span> بناء العلامات التجارية</div>
+  </div>
 </section>
 
-<section>
-<h2>الموسوعة المعرفية</h2>
-<p>
-منصة معرفية لنشر المعلومات والمقالات
-والأدلة العملية في مجالات التسويق
-والسيارات والتقنية والإدارة والأعمال
-وغيرها من المجالات التي تهم المجتمع.
-</p>
+<section class="card" id="encyclopedia">
+  <h2>الموسوعة التجارية</h2>
+  <p>
+    مساحة معرفية تهتم بالتجارة والتسويق والأعمال،
+    وتقدم معلومات وأفكاراً تساعد على تطوير المعرفة
+    وفهم عالم التجارة الرقمية.
+  </p>
 </section>
 
-<section>
-<h2>تابعني</h2>
-<p>
-حساب X:
-<a href="https://x.com/QQQ1B">@QQQ1B</a>
-</p>
-<p>سيتم إضافة بقية حسابات التواصل لاحقاً.</p>
+<section class="contact" id="contact">
+  <h2>تابعني على منصة X</h2>
+  <p>يسعدني تواصلك ومتابعتك لكل جديد.</p>
+  <a class="button" href="https://x.com/QQQ1B" target="_blank" rel="noopener">
+    تابعني الآن
+  </a>
 </section>
+
 </main>
 
 <footer>
-جميع الحقوق محفوظة © 2026 عرفات الهمداني
+  © 2026 عرفات الهمداني – جميع الحقوق محفوظة
 </footer>
 
 </body>
